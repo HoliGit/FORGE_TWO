@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ruf2kvl5ltfe" path="res://general/scripts/level_bounds.gd" id="1_biydo"]
 [ext_resource type="TileSet" uid="uid://b5minfq4fh4eh" path="res://levels/tilesets/forgotten_forest.tres" id="2_vv2jw"]
 [ext_resource type="PackedScene" uid="uid://bkyayegfnyd6a" path="res://general/level_transition/level_transition.tscn" id="3_vv2jw"]
+[ext_resource type="PackedScene" uid="uid://nfei8gx6u742" path="res://levels/props/torch.tscn" id="4_r7adf"]
 
 [node name="03" type="Node2D" unique_id=1952611618]
 
@@ -35,3 +36,13 @@ size = 3
 location = 2
 target_level = "uid://bf84l17jdctry"
 target_area_name = "LevelTransition2"
+
+[node name="Props" type="Node2D" parent="." unique_id=2128426273]
+position = Vector2(170, -2)
+
+[node name="Torch" parent="Props" unique_id=1010351731 instance=ExtResource("4_r7adf")]
+position = Vector2(500, 205)
+speed_scale = 0.9
+
+[node name="Torch2" parent="Props" unique_id=1656720921 instance=ExtResource("4_r7adf")]
+position = Vector2(606, 205)
