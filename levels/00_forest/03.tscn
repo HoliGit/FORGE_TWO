@@ -46,3 +46,4 @@ speed_scale = 0.9
 
 [node name="Torch2" parent="Props" unique_id=1656720921 instance=ExtResource("4_r7adf")]
 position = Vector2(606, 205)
+speed_scale = 1.1
