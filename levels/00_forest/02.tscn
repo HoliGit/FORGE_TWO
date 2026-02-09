@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bf84l17jdctry"]
 
 [ext_resource type="Script" uid="uid://ruf2kvl5ltfe" path="res://general/scripts/level_bounds.gd" id="1_epyyu"]
+[ext_resource type="PackedScene" uid="uid://g2bkftldy7xp" path="res://general/player_spawn/player_spawn.tscn" id="1_yy75x"]
 [ext_resource type="PackedScene" uid="uid://bkyayegfnyd6a" path="res://general/level_transition/level_transition.tscn" id="3_epyyu"]
 [ext_resource type="TileSet" uid="uid://b5minfq4fh4eh" path="res://levels/tilesets/forgotten_forest.tres" id="3_o5ap7"]
 [ext_resource type="PackedScene" uid="uid://nfei8gx6u742" path="res://levels/props/torch.tscn" id="4_s2tn3"]
@@ -61,6 +62,9 @@ seamless_blend_skirt = 0.501
 color = Color(0.7433311, 0.521418, 0.4229951, 1)
 energy = 0.4
 blend_mode = 2
+
+[node name="PlayerSpawn" parent="." unique_id=293278290 instance=ExtResource("1_yy75x")]
+position = Vector2(-6, 227)
 
 [node name="Parallax2D4" type="Parallax2D" parent="." unique_id=570714601]
 z_index = -10
